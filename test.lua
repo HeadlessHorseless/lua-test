@@ -5,7 +5,6 @@ surface.CreateFont("font1", { --tons of stuff here just for some text
 	antialias = false, 
 	outline  = true, 
 })
-local AB = AB or {}
 local function MsgY(time, text)
 	if not windowopen then
 		windowopen = true
@@ -17,7 +16,7 @@ local function MsgY(time, text)
 		window:ShowCloseButton(false)
 		window:SetDraggable(false)
 		window.Paint = function(s, w, h)
-			surface.SetDrawColor(50, 50, 50, 255) --Red Green Blue Alpha
+			surface.SetDrawColor(50, 50, 50, 255)
 			surface.DrawRect(0, 0, w, h)
 			draw.DrawText(text, "font1", w/2, 6, Color(0, 150, 255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
 		end
