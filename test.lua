@@ -1,4 +1,4 @@
-surface.CreateFont("font1", { --tons of stuff here just for some text
+surface.CreateFont("font1", {
 	font = "ChatFont", 
 	size = 20, 
 	weight = 674, 
